@@ -1,0 +1,290 @@
+:root{
+    --rosa1: #DE135A;
+    --rosa2: #FF6C6C;
+    --rosa3: #EFA8AD;
+    --azul1: #4A64BB;
+    --azul2: #6AB3FF;
+    --azul3: #08083f;
+    --branco: #ffffff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    font-family: sans-serif;
+    /* display: block; */
+}
+
+/* Barra-principal */
+.top{
+    background: var(--rosa3) url("imagens/Pattern\ Borrado_resized.png");
+    height: auto;
+    padding-bottom: 5%;
+}
+
+.barraprincipal{
+    height: 10vh;
+    width: 100%;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr;
+    justify-content: center;
+    background-color: var(--azul3);
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+
+.logobarraprincipal{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-width: 50px; max-height: 50px;
+    justify-content: flex-start;
+}
+.logo{
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.barraprincipal a{
+    color: var(--branco);
+    text-decoration: none;
+    /* transition: 1s; */
+}
+
+.barraprincipal p{
+    /* align-items: center; */
+    justify-content: left;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    color: var(--rosa3);
+    padding-left: 3px;
+    padding-right: 290px
+}
+
+main{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 60px;
+    padding-left: 50px;
+}
+nav ul{
+    width: 50vw;
+    display: flex;
+    grid-area: 1vw;
+    flex-wrap: nowrap;
+    padding-left: 50%;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+nav ul li{
+    color: var(--branco);
+}
+
+.barraprincipal button{
+    background-color: var(--rosa1);
+    color: var(--branco);
+    padding: 5px 5px;
+    border: none;
+    cursor: pointer;
+}
+
+/* destaque */
+.destaque{
+    padding-left: 5%;
+    padding-right: 5%;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 200px 200px;
+}
+
+.textodestaque header{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: var(--branco);
+    font-size: 3.5em;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--azul3);    
+}
+
+.textodestaque p{
+    color: var(--azul3);
+    font-size: x-large;
+    padding-bottom: 5%;
+}
+
+.logopng img{
+    padding: 0;
+    max-width: 200%; max-height: 250%
+}
+
+.botaocentro{
+    background-color: var(--rosa2);
+    border: none;
+    color: var(--azul3);
+    padding: 15px 40px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.botaocentro button:hover {
+    background-color: var(--rosa1);
+}
+
+/* Centro */
+.centro{
+    display: flex;
+    flex-flow: row wrap;
+    padding: auto;
+    height: auto;
+    text-align: center;
+    background-color: var(--branco);
+    justify-content: space-evenly;
+}
+
+.centro header{
+    margin: 0 10vw 0 11vw;
+    font-size: 1.7em;
+    color: var(--rosa1);
+    padding: 2% 0 5% 0;
+}
+
+.box1{
+    width: 20vw;
+    margin: 0 -5vw 10vh -7vw;
+}
+
+.box1 h3{
+    padding: 5%;
+    color: var(--azul2);
+}
+
+/* Nossos alunos */
+.nossosalunos{
+    height: auto;
+    padding: 5%;
+    text-align: center;
+    background-color: var(--azul1);
+    border-top: 3px solid var(--azul2);
+}
+.nossosalunos h2{
+    padding-bottom: 4%;
+    font-size: 1.7em;
+    color: var(--rosa2);
+}
+.nossosalunos h3{
+    color: var(--rosa2);
+    padding-bottom: 5%;
+}
+.nossosalunos section{
+    border: 1px solid var(--azul2);
+    border-radius: 10px;
+    margin: 2px;
+}
+.nossosalunos section p{
+    padding: 1%;
+    margin: 2%;
+    color: var(--azul3);
+}
+
+.contentnossosalunos{
+    display: grid;
+    grid-template-areas: "1 2 3 4 5";
+}
+
+.contentnossosalunos img{
+    padding: 2%;
+    border-radius: 100% solid 2px var();
+    max-width: 70%; max-height: 100%
+}
+
+/* matriculas */
+.matricula{
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+    text-align: center;
+    height: auto;
+    background-image: url("imagens/Background\ Simples\ 01.jpg");
+}
+.matricula header{
+    padding-bottom: 5vh;
+    color: var(--azul1);
+}
+form {
+    background-color: var(--branco);
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border-radius: 1em;
+}
+form {
+    color: var(--rosa1);
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid var(--azul3);
+  }
+label {
+    display: flex;
+    margin-bottom: 10px;
+}
+input, textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--azul1);
+}
+button {
+    background-color: var(--rosa1);
+    color: var(--branco);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: var(--rosa2);
+}
+
+  /* footer */
+footer{
+    height: auto;
+    padding: 1% 5px 1% 5px;
+    background-color: var(--azul3);
+    color: var(--branco);
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    padding-left: 1.5vw;
+}
+.footer{
+    padding-left: 50px;
+}
+
+.social figure{
+    display: inline-flex;
+    max-width: 30px; max-height: 30px;
+    align-items: center;
+}
+
+.social img {
+    width: 100%;
+    height: 100%;
+    padding: 1px;
+}
+.social p{
+    text-align:right;
+}
